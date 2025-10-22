@@ -8,6 +8,160 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 
 const topics = [
   {
+    id: "psychopath-sociopath",
+    title: "WHAT MAKES A PSYCHOPATH OR SOCIOPATH?😶",
+    image: "/psychopath-sociopath.jpg",
+    category: "Psychology",
+    readTime: "4 min read",
+    publishDate: "October 22, 2025",
+    description: (
+      <>
+        <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
+          <strong>amygdala</strong>: a part of the brain involved in processing emotions, particularly fear and empathy.
+        </span>
+        <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
+          <strong>ASPD (Antisocial Personality Disorder)</strong>: a mental health condition characterized by a pattern of disregard for others' rights and social norms.
+        </span>
+        <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
+          <strong>conduct disorder</strong>: a childhood behavioral disorder involving aggressive and antisocial behaviors before age 15.
+        </span>
+        <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
+          <strong>DSM-5</strong>: the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition — the American Psychiatric Association's diagnostic manual.
+        </span>
+        <span className="text-xs inline-block bg-muted px-2 py-1 rounded mb-2">
+          <strong>prefrontal cortex</strong>: the front part of the brain responsible for impulse control, decision-making, and social behavior.
+        </span>
+        <br />
+        <br />
+        Ever met someone who seemed charming on the surface, yet strangely cold, calculating, or indifferent underneath? Or maybe someone who reacts impulsively, breaking rules and disregarding others without a second thought? Both might fall under the same clinical umbrella — <strong>Antisocial Personality Disorder (ASPD)</strong> — but there's a difference between the two: <strong>psychopaths</strong> and <strong>sociopaths</strong>.
+        <br />
+        <br />
+        <strong>PSYCHOPATH VS. SOCIOPATH</strong>
+        <br />
+        Psychopaths and sociopaths share traits like manipulation, deceit, and disregard for social norms, but they differ in empathy, impulse control, and emotional attachment.
+        <br />
+        <br />
+        <strong>Psychopaths</strong> are emotionally detached and calculating.
+        They blend easily into society — calm, controlled, and charming — often hiding their true nature behind charisma.
+        <br />
+        <br />
+        <strong>Sociopaths</strong>, on the other hand, are volatile and impulsive.
+        They struggle to form long-term plans, often acting on emotion or frustration, leading to erratic or reckless behavior.
+        <br />
+        <br />
+        💬 In short: psychopaths plan their chaos; sociopaths stumble into theirs.
+        <br />
+        <br />
+        <strong>THEORIES BEHIND THE PSYCHO-SOCIOPATH</strong>
+        <br />
+        Researchers have proposed several explanations for what shapes these traits — from biology to upbringing, and even evolution itself.
+        <br />
+        <br />
+        ⇾ <strong>Biological Predisposition:</strong> Psychopaths often show differences in brain structure, especially in the <strong>amygdala</strong> (emotion and empathy) and <strong>prefrontal cortex</strong> (impulse control). These neurological differences may explain their emotional detachment and calculated cruelty.
+        <br />
+        <br />
+        ⇾ <strong>Environmental Shaping:</strong> Sociopathy is more closely linked to environmental factors — traumatic childhoods, neglect, or exposure to violence. A harsh or unstable upbringing can suppress empathy and encourage antisocial survival tactics.
+        <br />
+        <br />
+        ⇾ <strong>Evolutionary Hypothesis:</strong> Some psychologists suggest that psychopathic traits once had survival value. Fearlessness, charm, and manipulation could have been evolutionary tools for dominance, leadership, or survival in competitive environments.
+        <br />
+        <br />
+        ⇾ <strong>Behavioral Conditioning:</strong> When deceit, intimidation, or violence lead to success, those behaviors can be reinforced. Over time, people may learn that power and fear work better than empathy — forming an amoral worldview.
+        <br />
+        <br />
+        <strong>CONTRIBUTING FACTORS</strong>
+        <br />
+        Psychopathic or sociopathic traits may surface more strongly under certain conditions, including:
+        <br />
+        • Chronic stress or trauma exposure
+        <br />
+        • Early childhood neglect or abuse
+        <br />
+        • Substance misuse
+        <br />
+        • History of <strong>conduct disorder</strong> before age 15
+        <br />
+        • Dysfunctional family dynamics
+        <br />
+        • Neurological abnormalities or genetic predisposition
+      </>
+    ),
+    facts: [
+      {
+        text: (
+          <>
+            Around <strong>1%</strong> of the general population shows psychopathic traits, while sociopathic traits are estimated to occur in about <strong>4%</strong> of people.
+          </>
+        ),
+        publishDate: "",
+      },
+      {
+        text: (
+          <>
+            <strong>Psychopaths</strong> can often pass undetected — many hold stable jobs and families.
+          </>
+        ),
+        publishDate: "",
+      },
+      {
+        text: (
+          <>
+            <strong>Sociopaths</strong> are more erratic and likely to engage in unplanned, impulsive crimes.
+          </>
+        ),
+        publishDate: "",
+      },
+      {
+        text: (
+          <>
+            Studies suggest <strong>psychopathy</strong> is more strongly rooted in genetics, while <strong>sociopathy</strong> results more from environmental pressures.
+          </>
+        ),
+        publishDate: "",
+      },
+      {
+        text: (
+          <>
+            Psychopaths can mimic concern, but their emotional response is shallow — it's performance, not empathy.
+          </>
+        ),
+        publishDate: "",
+      },
+    ],
+    didYouKnow: {
+      text: (
+        <>
+          <strong>Ted Bundy</strong>, one of history's most infamous psychopaths, once helped police catch another serial killer — while he was on death row.
+          <br />
+          <br />
+          In the late 1980s, investigators sought Bundy's insight into the <strong>Green River Killer</strong> case, hoping his understanding of homicidal behavior could reveal the suspect's patterns.
+          Bundy agreed — not out of remorse, but for attention and temporary fame.
+          <br />
+          <br />
+          He gave a chillingly accurate psychological profile, suggesting the killer would return to dump sites to relive his crimes.
+          He was right — the Green River Killer, <strong>Gary Ridgway</strong>, later admitted to doing exactly that.
+          <br />
+          <br />
+          Bundy's ability to predict another murderer's behavior showcased the unnerving clarity and calculation that define psychopathy:
+          <br />
+          <br />
+          No empathy — just an expert-level understanding of human weakness.
+          <br />
+          <br />
+          <strong>A NOTE ON TERMINOLOGY</strong>
+          <br />
+          <br />
+          "Psychopath" and "sociopath" are not official psychiatric diagnoses.
+          Both fall under <strong>Antisocial Personality Disorder (ASPD)</strong> in the <strong>DSM-5</strong> — the American Psychiatric Association's diagnostic manual.
+          The terms are used to describe behavioral patterns, not distinct medical categories.
+          <br />
+          <br />
+          Psychopaths and sociopaths may look similar on the outside — but one is cold by nature, the other hardened by nurture.
+        </>
+      ),
+    },
+  },
+  {
     id: "hypnic-jerk",
     title: "FALLING IN YOUR SLEEP?!🤔",
     image: "/hypnic-jerk-1.jpg",
@@ -457,6 +611,19 @@ const sleepQuotes = [
   "Sleep paralysis? No thanks. I prefer sleep cardio—courtesy of hypnic jerks.",
 ]
 
+const psychologyQuotes = [
+  "Not everyone who smiles at you is your friend. Some are just studying which knife fits best.",
+  "Empathy is optional. Manipulation is an art form.",
+  "They say 'know thyself.' Psychopaths say 'know everyone else better.'",
+  "Some people wear masks to hide. Others wear faces.",
+  "Charm is a weapon. Silence is a strategy. Empathy? A liability.",
+  "The difference between a psychopath and a CEO? The psychopath might have better impulse control.",
+  "Normal people feel guilt. Smart people know when to fake it.",
+  "You can't hurt someone who doesn't care. That's not strength—that's emptiness.",
+  "The scariest monsters don't hide under the bed. They blend in at the office.",
+  "Morality is just social programming. Some people were born without the update.",
+]
+
 const wiseManFooterQuote = '"The role of a writer is not to say what we can all say, but what we are unable to say.😉" ~ Anais Nin'
 
 const INP_QUOTE = "Now many of u might be wondering what happened to Lamine Yamal!🤔\nWell...Nicki Nicole happened. Unam sayin'😊"
@@ -470,7 +637,8 @@ export default function Home() {
   const isBloodFalls = selectedTopic?.id === "blood-falls"
   const isGatesOfHell = selectedTopic?.id === "gates-of-hell"
   const isHypnicJerk = selectedTopic?.id === "hypnic-jerk"
-  const quotes = isBloodFalls ? pickupLines : isGatesOfHell ? wiseManQuotes : isHypnicJerk ? sleepQuotes : jokes
+  const isPsychopath = selectedTopic?.id === "psychopath-sociopath"
+  const quotes = isBloodFalls ? pickupLines : isGatesOfHell ? wiseManQuotes : isHypnicJerk ? sleepQuotes : isPsychopath ? psychologyQuotes : jokes
   const isINP = isGatesOfHell && quotes[currentJokeIndex] === INP_QUOTE
 
   useEffect(() => {
@@ -518,7 +686,7 @@ export default function Home() {
                 </div>
               ) : (
                 <>
-                  <h3 className="font-medium mb-4">{isBloodFalls ? "Smooth Talk Collection - Pickup Lines😒" : isGatesOfHell ? (isINP ? "🫢INP ONCE SAID" : "😏A WISE MAN ONCE SAID:") : isHypnicJerk ? "💤 SLEEP THOUGHTS" : "HAHAHA, sOo fUnNyYYyY…😒"}</h3>
+                  <h3 className="font-medium mb-4">{isBloodFalls ? "Smooth Talk Collection - Pickup Lines😒" : isGatesOfHell ? (isINP ? "🫢INP ONCE SAID" : "😏A WISE MAN ONCE SAID:") : isHypnicJerk ? "💤 SLEEP THOUGHTS" : isPsychopath ? "🧠 DARK PSYCHOLOGY" : "HAHAHA, sOo fUnNyYYyY…😒"}</h3>
                   <div className="min-h-[120px] flex items-center justify-center">
                     <div className="text-sm text-pretty leading-relaxed transition-all duration-500 ease-in-out text-center whitespace-pre-line">
                       {quotes[currentJokeIndex]}
