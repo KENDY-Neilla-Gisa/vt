@@ -146,8 +146,12 @@ const topics = [
           <br />
           <br />
           No empathy — just an expert-level understanding of human weakness.
-          <br />
-          <br />
+        </>
+      ),
+    },
+    terminology: {
+      text: (
+        <>
           <strong>A NOTE ON TERMINOLOGY</strong>
           <br />
           <br />

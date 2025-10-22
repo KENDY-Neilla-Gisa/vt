@@ -20,6 +20,9 @@ interface DetailPanelProps {
       text: string | React.ReactNode
       image?: string
     }
+    terminology?: {
+      text: string | React.ReactNode
+    }
     category: string | string[]
     readTime: string
     publishDate: string
@@ -79,6 +82,16 @@ export default function DetailPanel({ topic }: DetailPanelProps) {
             <Card className="border-l-4 border-l-accent">
               <CardContent className="p-4">
                 <div className="text-sm leading-relaxed text-pretty">{topic.didYouKnow.text}</div>
+              </CardContent>
+            </Card>
+          </div>
+        )}
+
+        {topic.terminology && (
+          <div>
+            <Card className="border-l-4 border-l-muted-foreground">
+              <CardContent className="p-4">
+                <div className="text-sm leading-relaxed text-pretty">{topic.terminology.text}</div>
               </CardContent>
             </Card>
           </div>
