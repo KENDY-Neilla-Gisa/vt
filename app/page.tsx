@@ -719,13 +719,13 @@ export default function Home() {
       </div>
 
       {/* Second Column - SERIES */}
-      <div className="w-full lg:w-96 border-b lg:border-b-0 lg:border-r bg-card flex flex-col">
-        <div className="p-4 sm:p-6 border-b">
+      <div className="w-full lg:w-96 border-b lg:border-b-0 lg:border-r bg-card flex flex-col max-h-[600px] lg:max-h-full">
+        <div className="p-4 sm:p-6 border-b flex-shrink-0">
           <h2 className="text-lg sm:text-xl font-semibold">SERIES</h2>
           <p className="text-sm text-muted-foreground mt-1">All featured topics</p>
         </div>
 
-        <ScrollArea className="flex-1">
+        <ScrollArea className="flex-1 overflow-y-auto">
           <div className="p-4 sm:p-6 space-y-4">
             {topics.map((topic) => (
               <TopicCard
