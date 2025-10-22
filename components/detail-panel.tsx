@@ -66,7 +66,6 @@ export default function DetailPanel({ topic }: DetailPanelProps) {
 
         {topic.didYouKnow && (
           <div>
-            <h2 className="text-lg font-semibold mb-4">Did You Know?</h2>
             {topic.didYouKnow.image && (
               <div className="mb-4">
                 <img
