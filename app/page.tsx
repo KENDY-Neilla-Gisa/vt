@@ -11,47 +11,35 @@ const topics = [
     id: "hypnic-jerk",
     title: "FALLING IN YOUR SLEEP?!🤔",
     image: "/hypnic-jerk-1.jpg",
-    category: ["Health Science", "Neuroscience"],
+    category: "Neuroscience",
     readTime: "3 min read",
     publishDate: "October 15, 2025",
-    carouselImages: [
-      "/hypnic-jerk-1.jpg",
-      "/hypnic-jerk-2.jpg",
-      "/hypnic-jerk-3.jpg",
-      "/hypnic-jerk-4.jpg",
-    ],
-    carouselLabels: [
-      "Person experiencing hypnic jerk",
-      "Brain during sleep transition",
-      "Sleep stages diagram",
-      "Peaceful sleep",
-    ],
     description: (
       <>
         <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
-          <strong>vestibular</strong>: relating to the system in the inner ear responsible for balance and spatial orientation.
+          <strong>non-REM sleep</strong>: the calm, restful part of sleep that has three stages — from light sleep to deep sleep.
+        </span>
+        <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
+          <strong>REM (Rapid Eye Movement) sleep</strong>: the stage of sleep where most dreams happen, with its name coming from how your eyes move behind your eyelids while you're dreaming.
         </span>
         <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
           <strong>sleep myoclonus</strong>: the involuntary, sudden jerking of muscles that happens during the transition to sleep.
         </span>
-        <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
-          <strong>non-REM sleep</strong>: the calm, restful part of sleep that has three stages — from light sleep to deep sleep.
-        </span>
         <span className="text-xs inline-block bg-muted px-2 py-1 rounded mb-2">
-          <strong>REM (Rapid Eye Movement) sleep</strong>: the stage of sleep where most dreams happen, with its name coming from how your eyes move behind your eyelids while you're dreaming.
+          <strong>vestibular</strong>: relating to the system in the inner ear responsible for balance and spatial orientation.
         </span>
         <br />
         <br />
         Have you ever felt like you were falling in your sleep and suddenly jolted awake?
-        That quick, unexpected twitch that pulls you out of rest isn't just random — it's something almost everyone experiences at some point. Known as a hypnic jerk, it happens right as your body is transitioning from being awake to falling asleep. For a moment, your brain and muscles seem to get their signals crossed, leaving you with that strange falling sensation and a sudden jump.
+        That quick, unexpected twitch that pulls you out of rest isn't just random — it's something almost everyone experiences at some point. Known as a <strong>hypnic jerk</strong>, it happens right as your body is transitioning from being awake to falling asleep. For a moment, your brain and muscles seem to get their signals crossed, leaving you with that strange falling sensation and a sudden jump.
         <br />
         <br />
         <strong>WHAT IS HYPNIC JERK?</strong>
         <br />
-        Hypnic Jerk (also called a hypnagogic jerk or sleep start) is a brief, involuntary muscle twitch that often occurs during the transition from wakefulness to sleep, usually in the first stage of <strong>non-REM sleep</strong>. This twitch may be accompanied by a vivid sensation of falling, tripping, or even hearing a jolt-like sound.
+        Hypnic Jerk (also called a <strong>hypnagogic jerk</strong> or <strong>sleep start</strong>) is a brief, involuntary muscle twitch that often occurs during the transition from wakefulness to sleep, usually in the first stage of <strong>non-REM sleep</strong>. This twitch may be accompanied by a vivid sensation of falling, tripping, or even hearing a jolt-like sound.
         <br />
         <br />
-        It also has to be noted that hypnic jerks are normal and occur even in healthy individuals.
+        ⚠️ It also has to be noted that hypnic jerks are normal and occur even in healthy individuals.
         <br />
         <br />
         <strong>THEORIES BEHIND THE HYPNIC JERK</strong>
@@ -65,7 +53,7 @@ const topics = [
         ⇾ <strong>Neural Misfires in the Brainstem:</strong> The reticular brainstem, which manages wakefulness and movement, may send out a sudden burst of energy as it shuts down for sleep, resulting in the muscle twitch.
         <br />
         <br />
-        ⇾ <strong>Vestibular Disconnection:</strong> When sensory input to the <strong>vestibular system</strong> decreases, the lack of information about gravity may cause the brain to interpret the sensation as free fall, reinforcing the illusion of falling.
+        ⇾ <strong>Vestibular Disconnection:</strong> When sensory input to the <strong>vestibular</strong> system decreases, the lack of information about gravity may cause the brain to interpret the sensation as free fall, reinforcing the illusion of falling.
         <br />
         <br />
         <strong>CONTRIBUTING FACTORS</strong>
@@ -87,15 +75,7 @@ const topics = [
       {
         text: (
           <>
-            Around <strong>70%</strong> of people experience hypnic jerks at least once in their lives, while about <strong>10%</strong> have them daily.
-          </>
-        ),
-        publishDate: "",
-      },
-      {
-        text: (
-          <>
-            Hypnic jerks occur more commonly in <strong>younger people</strong> and tend to <strong>decrease with age</strong>, dropping from several per hour in childhood to just one or two per night by old age.
+            <strong>REM sleep</strong> alternates with <strong>non-REM sleep</strong> throughout the night, with each cycle lasting about <strong>90 minutes</strong>.
           </>
         ),
         publishDate: "",
@@ -111,20 +91,24 @@ const topics = [
       {
         text: (
           <>
-            <strong>REM sleep</strong> alternates with <strong>non-REM sleep</strong> throughout the night, with each cycle lasting about <strong>90 minutes</strong>.
+            Around <strong>70%</strong> of people experience hypnic jerks at least once in their lives, while about <strong>10%</strong> have them daily.
+          </>
+        ),
+        publishDate: "",
+      },
+      {
+        text: (
+          <>
+            Hypnic jerks occur more commonly in <strong>younger people</strong> and tend to <strong>decrease with age</strong>, dropping from several per hour in childhood to just one or two per night by old age.
           </>
         ),
         publishDate: "",
       },
     ],
     didYouKnow: {
-      image: "/sleep-advice.jpg",
       text: (
         <>
-          <strong>WHEN TO SEEK MEDICAL ADVICE</strong>
-          <br />
-          <br />
-          Although hypnic jerks are normal and harmless, if they occur frequently enough to disrupt sleep or cause anxiety about falling asleep, a doctor might evaluate for sleep disorders or movement-related conditions such as sleep myoclonus.
+          Although hypnic jerks are normal and harmless, if they occur frequently enough to disrupt sleep or cause anxiety about falling asleep, a doctor might evaluate for sleep disorders or movement-related conditions such as <strong>sleep myoclonus</strong>.
           <br />
           <br />
           Most people experience hypnic jerks occasionally and find them more amusing than concerning. However, if you notice a significant increase in frequency or intensity, or if they're accompanied by other sleep disturbances, it's worth discussing with a healthcare provider to rule out any underlying sleep disorders.
@@ -618,131 +602,6 @@ const topics = [
           Kourounis used a custom-made Kevlar harness and multiple Technora ropes attached to a full-body aluminized suit with
           a self-contained breathing apparatus. He has since wished to descend into the crater again, carrying more equipment
           for better profiling of the local biome.
-        </>
-      ),
-    },
-  },
-  {
-    id: "hypnic-jerk",
-    title: "FALLING IN YOUR SLEEP?!🤔",
-    image: "/hypnic-jerk-1.jpg",
-    category: ["Health Science", "Neuroscience"],
-    readTime: "3 min read",
-    publishDate: "October 15, 2025",
-    carouselImages: [
-      "/hypnic-jerk-1.jpg",
-      "/hypnic-jerk-2.jpg",
-      "/hypnic-jerk-3.jpg",
-      "/hypnic-jerk-4.jpg",
-    ],
-    carouselLabels: [
-      "Person experiencing hypnic jerk",
-      "Brain during sleep transition",
-      "Sleep stages diagram",
-      "Peaceful sleep",
-    ],
-    description: (
-      <>
-        <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
-          <strong>vestibular</strong>: relating to the system in the inner ear responsible for balance and spatial orientation.
-        </span>
-        <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
-          <strong>sleep myoclonus</strong>: the involuntary, sudden jerking of muscles that happens during the transition to sleep.
-        </span>
-        <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
-          <strong>non-REM sleep</strong>: the calm, restful part of sleep that has three stages — from light sleep to deep sleep.
-        </span>
-        <span className="text-xs inline-block bg-muted px-2 py-1 rounded mb-2">
-          <strong>REM (Rapid Eye Movement) sleep</strong>: the stage of sleep where most dreams happen, with its name coming from how your eyes move behind your eyelids while you're dreaming.
-        </span>
-        <br />
-        <br />
-        Have you ever felt like you were falling in your sleep and suddenly jolted awake?
-        That quick, unexpected twitch that pulls you out of rest isn't just random — it's something almost everyone experiences at some point. Known as a hypnic jerk, it happens right as your body is transitioning from being awake to falling asleep. For a moment, your brain and muscles seem to get their signals crossed, leaving you with that strange falling sensation and a sudden jump.
-        <br />
-        <br />
-        <strong>WHAT IS HYPNIC JERK?</strong>
-        <br />
-        Hypnic Jerk (also called a hypnagogic jerk or sleep start) is a brief, involuntary muscle twitch that often occurs during the transition from wakefulness to sleep, usually in the first stage of <strong>non-REM sleep</strong>. This twitch may be accompanied by a vivid sensation of falling, tripping, or even hearing a jolt-like sound.
-        <br />
-        <br />
-        It also has to be noted that hypnic jerks are normal and occur even in healthy individuals.
-        <br />
-        <br />
-        <strong>THEORIES BEHIND THE HYPNIC JERK</strong>
-        <br />
-        ⇾ <strong>Brain Misinterpretation of Muscle Relaxation:</strong> As your muscles relax before sleep, the brain may misinterpret this as a loss of physical support, leading it to trigger a reflexive jerk to "catch" yourself from falling.
-        <br />
-        <br />
-        ⇾ <strong>Evolutionary Hypothesis:</strong> Some scientists suggest this reflex is a remnant from our primate ancestors — a survival mechanism to prevent falling from trees while sleeping.
-        <br />
-        <br />
-        ⇾ <strong>Neural Misfires in the Brainstem:</strong> The reticular brainstem, which manages wakefulness and movement, may send out a sudden burst of energy as it shuts down for sleep, resulting in the muscle twitch.
-        <br />
-        <br />
-        ⇾ <strong>Vestibular Disconnection:</strong> When sensory input to the <strong>vestibular system</strong> decreases, the lack of information about gravity may cause the brain to interpret the sensation as free fall, reinforcing the illusion of falling.
-        <br />
-        <br />
-        <strong>CONTRIBUTING FACTORS</strong>
-        <br />
-        Hypnic jerks are more common when a person is:
-        <br />
-        • Under stress or anxiety
-        <br />
-        • Experiencing sleep deprivation
-        <br />
-        • Consuming stimulants like caffeine or nicotine before bed
-        <br />
-        • Engaging in intense physical activity before rest
-        <br />
-        • Sleep position — lying on your back may make hypnic jerks more noticeable
-      </>
-    ),
-    facts: [
-      {
-        text: (
-          <>
-            Around <strong>70%</strong> of people experience hypnic jerks at least once in their lives, while about <strong>10%</strong> have them daily.
-          </>
-        ),
-        publishDate: "",
-      },
-      {
-        text: (
-          <>
-            Hypnic jerks occur more commonly in <strong>younger people</strong> and tend to <strong>decrease with age</strong>, dropping from several per hour in childhood to just one or two per night by old age.
-          </>
-        ),
-        publishDate: "",
-      },
-      {
-        text: (
-          <>
-            Hypnic jerk is a specific type of <strong>sleep myoclonus</strong>. While hypnic jerks specifically happen as you're falling asleep, sleep myoclonus can also occur in other sleep stages.
-          </>
-        ),
-        publishDate: "",
-      },
-      {
-        text: (
-          <>
-            <strong>REM sleep</strong> alternates with <strong>non-REM sleep</strong> throughout the night, with each cycle lasting about <strong>90 minutes</strong>.
-          </>
-        ),
-        publishDate: "",
-      },
-    ],
-    didYouKnow: {
-      image: "/sleep-advice.jpg",
-      text: (
-        <>
-          <strong>WHEN TO SEEK MEDICAL ADVICE</strong>
-          <br />
-          <br />
-          Although hypnic jerks are normal and harmless, if they occur frequently enough to disrupt sleep or cause anxiety about falling asleep, a doctor might evaluate for sleep disorders or movement-related conditions such as sleep myoclonus.
-          <br />
-          <br />
-          Most people experience hypnic jerks occasionally and find them more amusing than concerning. However, if you notice a significant increase in frequency or intensity, or if they're accompanied by other sleep disturbances, it's worth discussing with a healthcare provider to rule out any underlying sleep disorders.
         </>
       ),
     },
