@@ -10,10 +10,16 @@ const topics = [
   {
     id: "psychopath-sociopath",
     title: "WHAT MAKES A PSYCHOPATH OR SOCIOPATH?😶",
-    image: "/psychopath-sociopath.jpg",
+    image: "/psycho-socio.png",
     category: "Psychology",
     readTime: "4 min read",
     publishDate: "October 22, 2025",
+    carouselImages: [
+      "/psycho-socio.png",
+      "/psycho-socio-1.png",
+      "/psycho-socio-2.png",
+      "/psycho-socio-3.png",
+    ],
     description: (
       <>
         <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
@@ -177,12 +183,6 @@ const topics = [
       "/hypnic-jerk-1.png",
       "/hypnic-jerk-2.jpg",
       "/hypnic-jerk-3.jpg",
-    ],
-    carouselLabels: [
-      "Hypnic jerk sensation",
-      "Person experiencing hypnic jerk",
-      "Brain activity during sleep transition",
-      "Sleep stages and hypnic jerks",
     ],
     description: (
       <>
