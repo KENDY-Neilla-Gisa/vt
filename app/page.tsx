@@ -14,12 +14,7 @@ const topics = [
     category: "Psychology",
     readTime: "4 min read",
     publishDate: "October 22, 2025",
-    carouselImages: [
-      "/psycho-socio.png",
-      "/psycho-socio-1.png",
-      "/psycho-socio-2.png",
-      "/psycho-socio-3.png",
-    ],
+    carouselImages: ["/psycho-socio-1.png"],
     description: (
       <>
         <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
