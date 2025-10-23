@@ -703,11 +703,14 @@ export default function Home() {
                   )}
                   <div className="flex justify-center gap-1 mt-4">
                     {quotes.map((_, index) => (
-                      <div
+                      <button
                         key={index}
-                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                          index === currentJokeIndex ? "bg-primary" : "bg-muted-foreground/30"
+                        type="button"
+                        onClick={() => setCurrentJokeIndex(index)}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer hover:scale-125 ${
+                          index === currentJokeIndex ? "bg-primary" : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
                         }`}
+                        aria-label={`Go to quote ${index + 1}`}
                       />
                     ))}
                   </div>
