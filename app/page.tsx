@@ -168,7 +168,7 @@ const topics = [
   {
     id: "hypnic-jerk",
     title: "FALLING IN YOUR SLEEP?!🤔",
-    image: "/hypnic-jerk-1.jpg",
+    image: "/hypnic-jerk-1.png",
     category: "Neuroscience",
     readTime: "3 min read",
     publishDate: "October 15, 2025",
