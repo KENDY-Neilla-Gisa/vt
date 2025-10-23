@@ -644,6 +644,7 @@ wiseManQuotes.push(INP_QUOTE)
 export default function Home() {
   const [selectedTopic, setSelectedTopic] = useState<(typeof topics)[0] | null>(null)
   const [currentJokeIndex, setCurrentJokeIndex] = useState(0)
+  const [searchQuery, setSearchQuery] = useState("")
 
   const isBloodFalls = selectedTopic?.id === "blood-falls"
   const isGatesOfHell = selectedTopic?.id === "gates-of-hell"
@@ -651,6 +652,11 @@ export default function Home() {
   const isPsychopath = selectedTopic?.id === "psychopath-sociopath"
   const quotes = isBloodFalls ? pickupLines : isGatesOfHell ? wiseManQuotes : isHypnicJerk ? sleepQuotes : isPsychopath ? hiddenHabits : jokes
   const isINP = isGatesOfHell && quotes[currentJokeIndex] === INP_QUOTE
+
+  // Filter topics based on search query
+  const filteredTopics = topics.filter((topic) =>
+    topic.title.toLowerCase().includes(searchQuery.toLowerCase())
+  )
 
   useEffect(() => {
     setCurrentJokeIndex(0)
@@ -737,19 +743,35 @@ export default function Home() {
         <div className="p-4 sm:p-6 border-b flex-shrink-0">
           <h2 className="text-lg sm:text-xl font-semibold">SERIES</h2>
           <p className="text-sm text-muted-foreground mt-1">All featured topics</p>
+          <div className="mt-3">
+            <input
+              type="text"
+              placeholder="Search articles..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full px-3 py-2 text-sm border rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+            />
+          </div>
         </div>
 
         <ScrollArea className="flex-1 overflow-y-auto">
           <div className="p-4 sm:p-6 space-y-4">
-            {topics.map((topic) => (
-              <TopicCard
-                key={topic.id}
-                title={topic.title}
-                image={topic.image}
-                isSelected={selectedTopic?.id === topic.id}
-                onClick={() => setSelectedTopic(topic)}
-              />
-            ))}
+            {filteredTopics.length > 0 ? (
+              filteredTopics.map((topic) => (
+                <TopicCard
+                  key={topic.id}
+                  title={topic.title}
+                  image={topic.image}
+                  isSelected={selectedTopic?.id === topic.id}
+                  onClick={() => setSelectedTopic(topic)}
+                />
+              ))
+            ) : (
+              <div className="text-center py-8 text-muted-foreground">
+                <p className="text-sm">No articles found</p>
+                <p className="text-xs mt-1">Try a different search term</p>
+              </div>
+            )}
           </div>
         </ScrollArea>
       </div>
