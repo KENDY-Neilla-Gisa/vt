@@ -168,10 +168,22 @@ const topics = [
   {
     id: "hypnic-jerk",
     title: "FALLING IN YOUR SLEEP?!🤔",
-    image: "/hypnic-jerk-1.png",
+    image: "/hypnic-jerk.png",
     category: "Neuroscience",
     readTime: "3 min read",
     publishDate: "October 15, 2025",
+    carouselImages: [
+      "/hypnic-jerk.png",
+      "/hypnic-jerk-1.png",
+      "/hypnic-jerk-2.jpg",
+      "/hypnic-jerk-3.jpg",
+    ],
+    carouselLabels: [
+      "Hypnic jerk sensation",
+      "Person experiencing hypnic jerk",
+      "Brain activity during sleep transition",
+      "Sleep stages and hypnic jerks",
+    ],
     description: (
       <>
         <span className="text-xs inline-block bg-muted px-2 py-1 rounded mr-2 mb-2">
