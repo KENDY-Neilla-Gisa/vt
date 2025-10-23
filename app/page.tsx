@@ -603,16 +603,16 @@ const wiseManQuotes = [
 ]
 
 const sleepQuotes = [
-  "Sleep is the best meditation. Unless you're falling through the void, apparently.",
-  "I told my brain to stop making me feel like I'm falling. It said 'Trust fall!' and laughed.",
-  "My body: *completely relaxed*\nMy brain: YOU'RE FALLING OFF A CLIFF!",
-  "Sleep is just your brain's way of testing if you still have working reflexes.",
-  "Nothing says 'good night' like your own body pranking you awake.",
-  "Evolution: Let's make humans think they're falling when they're perfectly safe in bed. Peak comedy.",
-  "Me: Finally falling asleep\nMy nervous system: EMERGENCY! FAKE CRISIS! ALL HANDS ON DECK!",
-  "The only thing scarier than falling in your sleep is waking up and not knowing where you are.",
-  "Your body really said 'let me just check if gravity still works' at 2 AM.",
-  "Sleep paralysis? No thanks. I prefer sleep cardio—courtesy of hypnic jerks.",
+  "'What are u doing in hell?'\n⇾ Tryna install AC",
+  "'Keep rolling your eyes. Maybe you'll find a brain back there.'",
+  "'Nobody likes you'\n⇾ I'm not responsible for their bad taste",
+  "'If ugly was a day, you'd be an entire year.'",
+  "'ur ugly'\n⇾ i know ryt...we're twins",
+  "'Get a life'\n⇾ Like urs nah I'll pass",
+  "'Light travels faster than sound, which is why you seemed bright until you spoke.'",
+  "'Go to hell'\n⇾ Ew, wy would i go to ur house?!",
+  "'I'd slap you, but that'd be animal abuse.'",
+  "'Life is full of disappointments. I juss topped you to the list.'",
 ]
 
 const hiddenHabits = [
@@ -690,7 +690,7 @@ export default function Home() {
                 </div>
               ) : (
                 <>
-                  <h3 className="font-medium mb-4">{isBloodFalls ? "Smooth Talk Collection - Pickup Lines😒" : isGatesOfHell ? (isINP ? "🫢INP ONCE SAID" : "😏A WISE MAN ONCE SAID:") : isHypnicJerk ? "💤 SLEEP THOUGHTS" : isPsychopath ? "🧠 THE HIDDEN HABITS WE DON'T NOTICE" : "HAHAHA, sOo fUnNyYYyY…😒"}</h3>
+                  <h3 className="font-medium mb-4">{isBloodFalls ? "Smooth Talk Collection - Pickup Lines😒" : isGatesOfHell ? (isINP ? "🫢INP ONCE SAID" : "😏A WISE MAN ONCE SAID:") : isHypnicJerk ? "😊JUST SAYIN'" : isPsychopath ? "🧠 THE HIDDEN HABITS WE DON'T NOTICE" : "HAHAHA, sOo fUnNyYYyY…😒"}</h3>
                   <div className="min-h-[120px] flex items-center justify-center">
                     <div className="text-sm text-pretty leading-relaxed transition-all duration-500 ease-in-out text-center whitespace-pre-line">
                       {quotes[currentJokeIndex]}
