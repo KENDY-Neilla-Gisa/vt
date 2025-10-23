@@ -615,17 +615,17 @@ const sleepQuotes = [
   "Sleep paralysis? No thanks. I prefer sleep cardio—courtesy of hypnic jerks.",
 ]
 
-const psychologyQuotes = [
-  "Not everyone who smiles at you is your friend. Some are just studying which knife fits best.",
-  "Empathy is optional. Manipulation is an art form.",
-  "They say 'know thyself.' Psychopaths say 'know everyone else better.'",
-  "Some people wear masks to hide. Others wear faces.",
-  "Charm is a weapon. Silence is a strategy. Empathy? A liability.",
-  "The difference between a psychopath and a CEO? The psychopath might have better impulse control.",
-  "Normal people feel guilt. Smart people know when to fake it.",
-  "You can't hurt someone who doesn't care. That's not strength—that's emptiness.",
-  "The scariest monsters don't hide under the bed. They blend in at the office.",
-  "Morality is just social programming. Some people were born without the update.",
+const hiddenHabits = [
+  "1. Ghosting\n\nEver stopped replying because 'it's easier than explaining'?\nGhosting protects you from awkward emotions — but it also avoids honesty. It leaves others confused and you emotionally unpracticed.",
+  "2. Guilt Tripping\n\nInstead of asking directly, you make someone feel bad to get your way.\nIt's manipulation dressed as emotion — 'I guess you don't care about me.'",
+  "3. People-Pleasing / Fawning\n\nYou say 'yes' even when you want to say 'no.'\nYou confuse being kind with being available. But kindness without boundaries turns into exhaustion.",
+  "4. Perfectionism\n\nThat 'must do everything right' energy isn't motivation — it's fear.\nYou chase flawlessness to feel safe from judgment. But perfection kills creativity.",
+  "5. Over-Explaining\n\nYou give long explanations to prove you're not wrong, rude, or careless.\nThat comes from living where mistakes weren't safe.",
+  "6. Hyper-Independence\n\n'I don't need anyone.' Sounds powerful — but it's often protection.\nYou learned that depending on others leads to disappointment, so now you trust no one but yourself.",
+  "7. Habitual Overcommitment\n\nYou're always busy — because slowing down feels scary.\nMaybe it's to feel important, or to avoid loneliness, or to escape your thoughts.",
+  "8. Passive-Aggressive Behavior\n\nYou say 'It's fine' when it's not. You 'forget' things on purpose.\nIt's anger that doesn't know how to speak up — so it sneaks out sideways.",
+  "9. Projection\n\nYou accuse others of what you secretly feel yourself.\n'Why are you so selfish?' might actually mean 'I'm scared of being selfish.'",
+  "10. Rumination\n\nYou replay moments in your head, over and over, trying to change the past in your mind.\nIt feels like thinking — but it's emotional looping.",
 ]
 
 const wiseManFooterQuote = '"The role of a writer is not to say what we can all say, but what we are unable to say.😉" ~ Anais Nin'
@@ -642,7 +642,7 @@ export default function Home() {
   const isGatesOfHell = selectedTopic?.id === "gates-of-hell"
   const isHypnicJerk = selectedTopic?.id === "hypnic-jerk"
   const isPsychopath = selectedTopic?.id === "psychopath-sociopath"
-  const quotes = isBloodFalls ? pickupLines : isGatesOfHell ? wiseManQuotes : isHypnicJerk ? sleepQuotes : isPsychopath ? psychologyQuotes : jokes
+  const quotes = isBloodFalls ? pickupLines : isGatesOfHell ? wiseManQuotes : isHypnicJerk ? sleepQuotes : isPsychopath ? hiddenHabits : jokes
   const isINP = isGatesOfHell && quotes[currentJokeIndex] === INP_QUOTE
 
   useEffect(() => {
@@ -690,7 +690,7 @@ export default function Home() {
                 </div>
               ) : (
                 <>
-                  <h3 className="font-medium mb-4">{isBloodFalls ? "Smooth Talk Collection - Pickup Lines😒" : isGatesOfHell ? (isINP ? "🫢INP ONCE SAID" : "😏A WISE MAN ONCE SAID:") : isHypnicJerk ? "💤 SLEEP THOUGHTS" : isPsychopath ? "🧠 DARK PSYCHOLOGY" : "HAHAHA, sOo fUnNyYYyY…😒"}</h3>
+                  <h3 className="font-medium mb-4">{isBloodFalls ? "Smooth Talk Collection - Pickup Lines😒" : isGatesOfHell ? (isINP ? "🫢INP ONCE SAID" : "😏A WISE MAN ONCE SAID:") : isHypnicJerk ? "💤 SLEEP THOUGHTS" : isPsychopath ? "🧠 THE HIDDEN HABITS WE DON'T NOTICE" : "HAHAHA, sOo fUnNyYYyY…😒"}</h3>
                   <div className="min-h-[120px] flex items-center justify-center">
                     <div className="text-sm text-pretty leading-relaxed transition-all duration-500 ease-in-out text-center whitespace-pre-line">
                       {quotes[currentJokeIndex]}
